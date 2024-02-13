@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8AEEFF"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/scroll_view1"
+        app:layout_constraintVertical_bias="0.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#8AEEFF"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/circle1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="-69dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="#D247C1A4" />
+
+            <TextView
+                android:id="@+id/circle2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="-19dp"
+                android:layout_marginLeft="-50dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="#D247C1A4" />
+
+            <TextView
+                android:id="@+id/hm_st1"
+                android:layout_width="203dp"
+                android:layout_height="57dp"
+                android:layout_alignTop="@id/circle2"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="55dp"
+                android:text="Hello, "
+                android:textColor="#157177"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hm_st2"
+                android:layout_width="203dp"
+                android:layout_height="57dp"
+                android:layout_alignEnd="@id/hm_st1"
+                android:layout_alignBottom="@id/hm_st1"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="-72dp"
+                android:text="Ali"
+                android:textColor="#157177"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hm_st3"
+                android:layout_width="301dp"
+                android:layout_height="32dp"
+                android:layout_alignStart="@id/hm_st1"
+                android:layout_alignBottom="@id/hm_st1"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="-11dp"
+                android:text="Ready for mentorship? Let’s begin the journey!"
+                android:textColor="#157177"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/bell"
+                android:layout_width="25dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="365dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="21dp"
+                android:background="@drawable/notification_bell_5743" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/hm_st3"
+                android:layout_marginBottom="-42dp"
+                app:layout_constraintBottom_toBottomOf="@id/hm_st3"
+                app:layout_constraintEnd_toEndOf="@id/hm_st3">
+
+                <LinearLayout
+                    android:layout_width="900dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/curve_square"
+                        android:backgroundTint="#5CA7AC"
+                        android:contextClickable="true"
+                        android:gravity="start|center"
+                        android:text="Hello"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/curve_square"
+                        android:backgroundTint="#5CA7AC"
+                        android:contextClickable="true"
+                        android:gravity="start|center"
+                        android:text="option"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/curve_square"
+                        android:backgroundTint="#5CA7AC"
+                        android:contextClickable="true"
+                        android:gravity="start|center"
+                        android:text="option"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/curve_square"
+                        android:backgroundTint="#5CA7AC"
+                        android:contextClickable="true"
+                        android:gravity="start|center"
+                        android:text="option"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/curve_square"
+                        android:backgroundTint="#5CA7AC"
+                        android:contextClickable="true"
+                        android:gravity="start|center"
+                        android:text="option"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/curve_square"
+                        android:backgroundTint="#5CA7AC"
+                        android:contextClickable="true"
+                        android:gravity="start|center"
+                        android:text="option"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Mentors for you"
+                android:textColor="#157177"
+                android:layout_alignParentBottom="true"
+
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:textSize="18dp"
+
+
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="12dp"
+                android:text="View All"
+                android:textColor="#157177"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:id="@+id/scroll_view2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#8AEEFF"
+            tools:ignore="MissingConstraints">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="900dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:backgroundTint="@color/white"
+                        android:id="@+id/card1"
+                        app:cardElevation="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="100dp"
+                                android:paddingStart="12dp"
+                                android:text="john Cooper"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="NotSibling" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="UX/UI Designer"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:backgroundTint="@color/white"
+                        android:id="@+id/card2"
+                        app:cardElevation="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="100dp"
+                                android:paddingStart="12dp"
+                                android:text="john Cooper"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="NotSibling" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="UX/UI Designer"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/card3"
+                        app:cardElevation="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="100dp"
+                                android:paddingStart="12dp"
+                                android:text="john Cooper"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="NotSibling" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="UX/UI Designer"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                                />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentBottom="true"
+                android:text="Education Mentors"
+                android:textColor="#157177"
+                android:textSize="18dp"
+
+
+                android:textStyle="bold"
+                tools:ignore="NotSibling" />
+        </RelativeLayout>
+
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp"
+        android:id="@+id/scroll_view3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#8AEEFF"
+            tools:ignore="MissingConstraints">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="900dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/card21"
+                        android:backgroundTint="@color/white"
+                        app:cardElevation="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="100dp"
+                                android:paddingStart="12dp"
+                                android:text="john Cooper"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="NotSibling" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="UX/UI Designer"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/card22"
+                        app:cardElevation="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="100dp"
+                                android:paddingStart="12dp"
+                                android:text="john Cooper"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="NotSibling" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="UX/UI Designer"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/card23"
+                        app:cardElevation="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="4dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="100dp"
+                                android:paddingStart="12dp"
+                                android:text="john Cooper"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="NotSibling" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="UX/UI Designer"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView23"
+                                />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="45dp"
+            app:cardElevation="0dp"
+
+            android:backgroundTint="#157177"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon1"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/baseline_home_24"
+                    android:backgroundTint="#FAFAF8"
+                    />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon2"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FAFAF8"
+                    android:background="@drawable/search"
+                    android:backgroundTint="@color/white"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="38dp"
+                    android:id="@+id/icon4"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/_11802_plus_icon"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon5"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/baseline_add_comment_24"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/icon3"
+                    android:layout_width="34dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/people"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

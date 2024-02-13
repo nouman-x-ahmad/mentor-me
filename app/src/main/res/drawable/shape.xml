@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval">
+            <size
+                android:width="120dp"
+                android:height="120dp"/>
+            <gradient
+                android:angle="0"
+                android:centerX="0.4"
+                android:centerY="0.4"
+                android:startColor="#36CCCC"
+                android:centerColor="#35D3CD"
+                android:endColor="#16B4CA"/>
+        </shape>
+    </item>
+    <item android:alpha="0.5"> <!-- Adjust the alpha value here (0.0 to 1.0) -->
+        <shape
+            android:shape="oval">
+            <size
+                android:width="120dp"
+                android:height="120dp"/>
+            <gradient
+                android:angle="0"
+                android:centerX="0.4"
+                android:centerY="0.4"
+                android:startColor="#36CCCC"
+                android:centerColor="#35D3CD"
+                android:endColor="#16B4CA"/>
+        </shape>
+    </item>
+</selector>

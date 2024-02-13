@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FE1D7"
+    tools:context=".Voice_call">
+
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:clipToOutline="true"
+        android:background="#8FE1D7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/micoff" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/videooff" />
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/recycle" />
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="#F60000"
+                android:textAlignment="center"
+                android:textColor="#F6FDFD"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="X"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/belowCamera"
+        android:layout_width="match_parent"
+        android:layout_height="579dp"
+        android:background="#DDD7D7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/camera"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="NotSibling">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+            android:text="John Cooper"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"
+            android:text="50:23"
+            android:textStyle="bold"
+            android:id="@+id/time"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/circular_image_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/time"
+            android:layout_marginBottom="-125dp"
+            android:contentDescription="Circular Image1"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person1"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

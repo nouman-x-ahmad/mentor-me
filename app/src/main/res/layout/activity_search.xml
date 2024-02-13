@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8AEEFF"
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/circle1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-69dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#D247C1A4" />
+
+    <TextView
+        android:id="@+id/circle2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-19dp"
+        android:layout_marginLeft="-50dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#D247C1A4" />
+
+    <TextView
+        android:id="@+id/hm_st1"
+        android:layout_width="203dp"
+        android:layout_height="57dp"
+        android:layout_alignTop="@id/circle2"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="55dp"
+        android:text="Let's Find..."
+        android:textColor="#157177"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="347dp"
+                android:layout_height="57dp"
+                android:layout_alignTop="@id/circle2"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/curve_square"
+                android:backgroundTint="#FBFBFB"
+                android:hint="Search"
+                android:paddingStart="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#157177"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/src_st2"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_alignTop="@id/circle2"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="20dp"
+                android:text="Recent Searches"
+                android:textColor="#157177"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="30dp"
+                android:layout_alignStart="@id/src_st2"
+                android:text="Mentor 1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/cross_23"
+                android:textColor="#157177"
+                />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/empty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_alignStart="@id/src_st2"
+                    android:text="Mentor 2"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/cross_23"
+                    android:textColor="#157177"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/curve_square"
+            android:backgroundTint="#D247C1A4"
+            android:id="@+id/empty3"
+            />
+
+        <TextView
+            android:id="@+id/src_st3"
+            android:layout_width="345dp"
+            android:layout_height="61dp"
+            android:layout_alignStart="@id/empty3"
+            android:layout_alignTop="@id/empty3"
+            android:layout_marginStart="34dp"
+            android:text="Browse Categories"
+            android:textColor="#157177"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:layout_below="@id/src_st3"
+        android:id="@+id/linearLayout"
+        tools:ignore="InvalidId">
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignStart="@id/src_st3"
+        android:background="@drawable/yes1"/>
+        <TextView
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/src_st3"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:text="Entrepreneurship"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:drawableEnd="@drawable/baseline_arrow_outward_24"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearLayout2"
+            >
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="30dp"
+                android:layout_alignStart="@id/src_st3"
+                android:background="@drawable/yes2"/>
+            <TextView
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/src_st3"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Personal Growth"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/baseline_arrow_outward_24"
+                />
+
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linearLayout2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearLayout3"
+            >
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="30dp"
+                android:layout_alignStart="@id/src_st3"
+                android:background="@drawable/yes3"/>
+            <TextView
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/src_st3"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Education"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/baseline_arrow_outward_24"
+                />
+</LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="45dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="#157177"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon1"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/baseline_home_24"
+                    android:backgroundTint="#FAFAF8"
+                    />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon2"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FAFAF8"
+                    android:background="@drawable/search"
+                    android:backgroundTint="@color/white"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="38dp"
+                    android:id="@+id/icon4"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/_11802_plus_icon"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon5"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/baseline_add_comment_24"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/icon3"
+                    android:layout_width="34dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/people"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

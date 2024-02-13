@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50C2C9"
+    tools:context=".Chat_screen">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="#8FE1D7"
+        android:id="@+id/relativeLayout"
+        tools:ignore="MissingConstraints">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-25dp"
+
+            android:background="#50C2C9"
+            android:backgroundTint="#50C2C9"
+            app:cardCornerRadius="19dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="40dp"
+                android:drawablePadding="10dp"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="John Cooper"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="110dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/white"
+                android:text="Community Chat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="130dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:background="@drawable/_15777_video_icon"
+                android:backgroundTint="@color/white"
+                android:layout_marginEnd="40dp"
+                />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/circular_image_view"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="Circular Image1"
+                android:padding="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person1"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@id/bar"
+            android:layout_marginBottom="56dp"
+
+            android:background="#50C2C9"
+            android:backgroundTint="#50C2C9"
+            app:cardCornerRadius="29dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/feature1"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/attachement_pic"
+                    android:backgroundTint="#FAFAF8"
+                    />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/feature2"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FAFAF8"
+                    android:background="@drawable/photlib"
+                    android:backgroundTint="@color/white"
+
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:hint="Type a message.....       "
+                    android:textColor="#FAFAF8"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/feature3"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/baseline_camera_alt_24"
+                    android:backgroundTint="@color/white"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/feature5"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/micoff"
+                    android:backgroundTint="@color/white"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/feature6"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/send_pic"
+                    android:backgroundTint="@color/white"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bar"
+            android:elevation="45dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="#157177"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon1"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/baseline_home_24"
+                    android:backgroundTint="#FAFAF8"
+                    />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon2"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FAFAF8"
+                    android:background="@drawable/search"
+                    android:backgroundTint="@color/white"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="38dp"
+                    android:id="@+id/icon4"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/_11802_plus_icon"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon5"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/baseline_add_comment_24"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/icon3"
+                    android:layout_width="34dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/people"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

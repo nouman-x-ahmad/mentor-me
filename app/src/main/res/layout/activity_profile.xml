@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:background="#8FE1D7"
+        android:id="@+id/relativeLayout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:text="My Profile"
+            android:textAlignment="center"
+            android:textColor="#157177"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/checkerboardpattern"
+            android:id="@+id/pattern"
+            android:textAlignment="center"
+            android:textColor="#F6FDFD"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/circular_image_view"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_below="@+id/textView8"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="Circular Image1"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person1"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_alignBottom="@+id/circular_image_view"
+            android:layout_marginBottom="-25dp"
+            android:text="Ali"
+            android:textAlignment="center"
+            android:textColor="#517177"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#FFC90A"
+            android:text="Booked session" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bar"
+            android:elevation="45dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="#157177"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon1"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/baseline_home_24"
+                    android:backgroundTint="#FAFAF8"
+                    />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon2"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FAFAF8"
+                    android:background="@drawable/search"
+                    android:backgroundTint="@color/white"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="38dp"
+                    android:id="@+id/icon4"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/_11802_plus_icon"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="34dp"
+                    android:id="@+id/icon5"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/baseline_add_comment_24"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/icon3"
+                    android:layout_width="34dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/people"
+                    android:textColor="#FAFAF8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

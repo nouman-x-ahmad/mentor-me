@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <!-- Define the path for the star -->
+    <path
+        android:fillColor="#F8F808"
+        android:pathData="M12,2l2.5,7.5h7.5l-6,4.5l2.5,7.5l-7.5,-6l-7.5,6l2.5,-7.5l-6,-4.5h7.5Z" />
+
+</vector>
+

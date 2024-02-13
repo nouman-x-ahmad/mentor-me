@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP"
+    android:background="#C2FAE4"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="92dp"
+            android:text="Verify your Phone Number"
+
+            android:textColor="#27B52E"
+            android:textSize="28dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="104dp"
+
+            android:layout_marginTop="126dp"
+            android:text="we've sent a code to "
+            android:textColor="#262726"
+            android:textSize="11dp"
+            tools:ignore="TextSizeCheck"></TextView>
+
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="206dp"
+            android:layout_marginTop="127dp"
+            android:text="+92 345 67891011"
+            android:textColor="#038C03"
+            android:textSize="11dp"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="68dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="320dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/arrow_left_svgrepo_com__1_" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="171dp"
+                android:background="@drawable/curve_square"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textSize="35dp"
+                android:text="3"
+                />
+
+            <EditText
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="171dp"
+                android:background="@drawable/curve_square"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textSize="35dp"
+                android:text="3"
+                />
+
+            <EditText
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="171dp"
+                android:background="@drawable/curve_square"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textSize="35dp"
+                android:text="3"
+                />
+
+            <EditText
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="171dp"
+                android:background="@drawable/curve_square"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textSize="35dp"
+                android:text="3"
+                />
+
+            <EditText
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="171dp"
+                android:background="@drawable/curve_square"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:maxLength="1"
+                android:textSize="35dp"
+                android:text="3"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verify"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#157177"
+            android:text="Verify"
+            android:textColor="#F2FAFAFA" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/st7"
+            android:layout_alignBottom="@id/verify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-23dp"
+
+            android:text="Send code Again"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/st7"
+            android:layout_alignBottom="@id/verify"
+            android:layout_marginEnd="-40dp"
+            android:layout_marginBottom="-23dp"
+            android:textColor="#157177"
+            android:text="00:20" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

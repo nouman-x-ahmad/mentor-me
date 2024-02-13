@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid/>
+
+    <!-- Adjust the stroke width and color -->
+    <stroke
+        android:width="4dp"
+        android:color="#B1BCBE" />
+
+    <!-- Adjust the corner radius to create curved edges -->
+    <corners android:radius="35dp"/>
+
+    <!-- Add padding if necessary -->
+    <padding
+        android:left="0dp"
+        android:top="0dp"
+        android:right="0dp"
+        android:bottom="0dp" />
+
+</shape>
